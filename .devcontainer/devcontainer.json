@@ -1,4 +1,10 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {}
+  "name": "Node.js Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/node-version:1": {
+      "version": "20"
+    }
+  },
+  "postCreateCommand": "node -v && npm -v"
 }
