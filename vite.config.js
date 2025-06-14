@@ -2,7 +2,11 @@ import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
-  base: './',
+  base: '/Rise-Of-The-Elites-/', // 👈 VERY important!
+  build: {
+    outDir: 'dist',
+  },
+});
   plugins: [VitePWA({
     registerType: 'autoUpdate',
     includeAssets: ['favicon.ico'],
