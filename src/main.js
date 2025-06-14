@@ -1,4 +1,5 @@
-// ✅ No need for './src' prefix — you're already inside src/
+// src/main.js
+import Phaser from 'phaser';
 import PreloadScene from './scenes/PreloadScene.js';
 import GameScene from './scenes/GameScene.js';
 
