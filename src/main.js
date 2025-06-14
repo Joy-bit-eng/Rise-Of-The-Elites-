@@ -1,13 +1,12 @@
-import BootScene from './scenes/BootScene.js';
-import PreloadScene from './scenes/PreloadScene.js';
-import GameScene from './scenes/GameScene.js';
+import PreloadScene from './src/scenes/PreloadScene.js';
+import GameScene from './src/scenes/GameScene.js';
 
 const config = {
   type: Phaser.AUTO,
   width: 800,
   height: 600,
-  backgroundColor: '#000000',
-  parent: 'game-container',
+  backgroundColor: '#1d1d1d',
+  parent: 'game',
   pixelArt: true,
   physics: {
     default: 'arcade',
@@ -16,7 +15,7 @@ const config = {
       debug: false
     }
   },
-  scene: [BootScene, PreloadScene, GameScene]
+  scene: [PreloadScene, GameScene]
 };
 
-const game = new Phaser.Game(config);
+new Phaser.Game(config);
