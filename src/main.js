@@ -1,5 +1,6 @@
-import PreloadScene from './src/scenes/PreloadScene.js';
-import GameScene from './src/scenes/GameScene.js';
+// ✅ No need for './src' prefix — you're already inside src/
+import PreloadScene from './scenes/PreloadScene.js';
+import GameScene from './scenes/GameScene.js';
 
 const config = {
   type: Phaser.AUTO,
