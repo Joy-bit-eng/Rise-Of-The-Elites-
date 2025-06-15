@@ -4,9 +4,15 @@ export default class PreloadScene extends Phaser.Scene {
   }
 
   preload() {
-    // Load your assets here, e.g.:
-    // this.load.image('player', 'sprites/player.png');
+  this.load.image('tiles', 'assets/tiles.png');
+  this.load.tilemapTiledJSON('map', 'assets/world.json');
+  this.load.spritesheet('player', 'sprites/player.png', {
+    frameWidth: 32,
+    frameHeight: 32
+  });
+  // Add any audio, items, NPCs, UI, etc.
   }
+  
 
   create() {
     this.scene.start('GameScene');
